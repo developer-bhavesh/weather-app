@@ -59,7 +59,7 @@ const CustomTabButton = ({ icon, onPress, accessibilityState }) => {
 
   React.useEffect(() => {
     Animated.spring(translateY, {
-      toValue: focused ? -3 : 0,
+      toValue: focused ? -5 : 0,
       useNativeDriver: true,
     }).start();
   }, [focused]);
